@@ -1,0 +1,751 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+  width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* --- Mobile First--- */
+
+/* NAV  --- NAV  --- NAV */
+
+.navegacao {
+  background-color: #457982;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+}
+
+.navegacao__logo {
+  max-width: 200px;
+}
+
+.navegacao__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+/* define o tamanho da caixa */
+/*.container {
+margin: 0 auto;
+width: 100%;
+max-width: 960px;
+}*/
+
+.navegacao__itens {
+display: none;
+}
+
+.navegacao__menu-hamburguer img {
+border-radius: 2px;
+}
+
+/* HEADER  --- HEADER  --- HEADER */
+
+.header {
+  min-height: 40px;
+  height: 600px;
+  background-image:
+  url(../susane-silva/img/susane-silva.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+  color: rgba(255, 255, 255, 0.726);
+}
+
+.principal {
+  margin-bottom: 150px;
+}
+
+.principal__titulo {
+  text-transform: uppercase;
+  font-size: 200%;
+  font-weight: 900;
+  margin-left: 70%;
+  height: 200%;
+}
+
+/* --- CONTEÚDO PRINCIPAL --- CONTEÚDO PRINCIPAL --- CONTEÚDO PRINCIPAL */
+
+.conteudo-principal{
+  background-color: white;
+  text-align: left;
+  right: 50%;
+}
+
+.título__conteudo{
+  font-size: 25px;
+  color: #7abec7b9;
+  text-align: center; 
+  padding: 30px;
+  padding-bottom: 20px;
+  font-family: 'Roboto Slab';
+  margin-left: 5%;
+}
+
+.artigo__sobreAutora{
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+
+.foto__dePerfil{
+  max-height: 180px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.conteudo__sobreAutora{
+  color: #45468a;
+  padding-right: 40px;
+  font-size: 12px;
+  padding-top: 18px;
+}
+
+.texto__sobreAutora{
+  padding-bottom: 10px;
+}
+
+/* --- M DE MARAVILHOSA --- M DE MARAVILHOSA --- M DE MARAVILHOSA */
+
+.titulo__Mdemaravilhosa{
+  font-size: 28px;
+  color: #7abec7b9;
+  text-align: center; 
+  font-family: 'Roboto Slab'
+}
+
+.historia__Mdemaravilhosa{
+  font-size: 13px;
+  text-align: center;
+  padding: 15px 50px 15px 50px;;
+  text-align: left;
+  color: #7abec7b9;
+}
+
+.foto__Alunasreprograma{
+  width: 100%;
+  padding: 15px 50px 15px 50px;
+}
+
+.titulo__alunas{
+  text-align: center;
+  font-size: 12px;
+  color: #46458a;
+}
+
+/* --- OUTRAS MARAVILHOSAS --- OUTRAS MARAVILHOSAS --- OUTRAS MARAVILHOSAS */
+
+.outras-maravilhosas{
+background-color:#fff;
+height: 800px; 
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.fotos__maravilhosas{
+max-height: 200px;
+padding: 20px;
+border-radius: 25px;
+padding-bottom: 5px;
+}
+
+.home__outrasMaravilhosas{
+color: #000;
+font-size: 14px;
+padding-bottom: 15px;
+text-align: center;
+}
+
+/* --- BTN --- BTN --- BTN*/
+
+.btn__home{
+  color: white;
+  background-color: #3a8f9e;
+max-width: 200px;
+display: flex;
+text-align: center;
+justify-content: center;
+margin: 0 auto;
+margin-bottom: 30px;
+margin-top: 35px;
+text-transform: uppercase;
+font-weight: bold;
+padding: 15px;
+border-radius: 5px;
+font-size: 15px;
+transition: all 0.5s;
+}
+
+/* --- FOOTER --- */
+
+.rodape {
+background-color: #457982;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.rodape__principal {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+}
+
+.rodape__principal > * {
+margin: 16px 0;
+}
+
+.rodape__navegacao > li {
+font-size: 14px;
+margin: 8px;
+}
+
+.rodape__navegacao a {
+transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+color: #C083B9;
+}
+
+.rodape__logo {
+max-width: 200px;
+align-items: center;
+justify-content: center;
+}
+
+.rodape__cc {
+width: 100%;
+background-color: #292A2A;
+font-size: 14px;
+opacity: 0.5;
+text-align: center;
+padding: 10px;
+}
+
+/*  --- TABLET --- --- TABLET --- */
+
+@media (min-width: 768px) {
+/* --- NAV --- */
+.navegacao__itens {
+  position: static;
+  display: flex;
+  padding: 0;
+  width: auto;
+}
+
+.navegacao__nav { 
+  color: #fff;
+  margin-bottom: 0;
+}
+  
+.navegacao__itens ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+  
+  .navegacao__itens li {
+  font-size: 16px;
+  margin: 0 9px;
+}
+
+.navegacao__itens.ativo {
+  display: block;
+  right: 0;
+  top: 85px;
+  width: 100%;
+  background-color: #455382;
+  text-align: center;
+  padding: 48px 0;
+  transition: right 1s;
+}
+
+.navegacao__itens li > a {
+  transition: all .2s;
+}
+.navegacao__itens li > a:hover {
+  color: #8387c0;
+}
+  
+.navegacao__menu-hamburguer {
+  display: none;
+}
+
+/* HEADER  --- HEADER  --- HEADER */
+
+.header {
+  min-height: 75vh;
+  height: 360px;
+  background-image:
+  url(../susane-silva/img/susane-silva.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content:center;
+  color: #fff;
+  text-align: left;
+  padding: 10px 100px;
+}
+
+.principal {
+  margin-bottom: 150px;
+}
+
+.principal__titulo {
+  text-transform: uppercase;
+  font-size: 200%;
+  font-weight: 900;
+  margin-left: 70%;
+  height: 200%;
+
+}
+
+/* --- CONTEÚDO PRINCIPAL --- CONTEÚDO PRINCIPAL --- CONTEÚDO PRINCIPAL */
+
+.conteudo-principal{
+  background-color: white;
+  margin: 0 auto;
+  width: 700px;
+  padding-bottom: 25px;
+}
+
+.título__conteudo{
+  font-size: 25px;
+  color: #7abec7b9;
+  text-align: center; 
+  padding: 30px;
+  padding-bottom: 20px;
+  padding-right: 70px;
+  font-family: 'Roboto Slab';
+}
+
+.artigo__sobreAutora{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: left;
+}
+
+.foto__dePerfil{
+  max-height: 180px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.conteudo__sobreAutora{
+  color: #45558a;
+  padding-right: 150px;
+  font-size: 17px;
+  padding-top: 18px;
+}
+
+/* --- M DE MARAVILHOSA --- M DE MARAVILHOSA --- M DE MARAVILHOSA */
+
+.conteudo-Mdemaravilhosa{
+margin: 0 auto;
+width: 760px;
+}
+
+.titulo__Mdemaravilhosa{
+  font-size: 27px;
+  color: #45468a;
+  text-align: center; 
+  font-family: 'Roboto Slab';
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.historia__Mdemaravilhosa{
+  font-size: 17px;
+  text-align: center;
+  padding: 30px 50px 30px 50px;;
+  text-align: left;
+  color: rgb(69, 136, 138);
+}
+
+.foto__Alunasreprograma{
+  width: 100%;
+  padding: 15px 50px 15px 50px;
+
+}
+
+.titulo__alunas{
+  text-align: center;
+  font-size: 15px;
+  color: #45528a;
+}
+
+/* --- OUTRAS MARAVILHOSAS --- OUTRAS MARAVILHOSAS --- OUTRAS MARAVILHOSAS */
+
+.outras-maravilhosas{
+background-color: #fff;
+width: 100%;
+height: 350px;
+}
+
+.foto-Maravilhosas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fotos__maravilhosas{
+max-height: 200px;
+}
+
+.nome__outrasMaravilhosas{
+color: #63458a;
+font-size: 16px;
+padding-left: 20px;
+}
+
+/* --- BTN --- BTN --- BTN*/
+
+.btn__home{
+  color: white;
+  background-color: #3a8f9e;
+max-width: 200px;
+display: flex;
+text-align: center;
+justify-content: center;
+margin: 0 auto;
+margin-bottom: 30px;
+margin-top: 35px;
+text-transform: uppercase;
+font-weight: bold;
+padding: 15px;
+border-radius: 5px;
+font-size: 15px;
+transition: all 0.5s;
+}
+
+/* --- FOOTER --- */
+
+.rodape {
+background-color: #457982;
+color: white;
+padding-top: 0
+}
+
+.rodape__principal {
+align-items: center;
+text-align: center;
+flex-direction: row;
+justify-content: space-around;
+width: 100%;
+}
+
+.rodape__principal > * {
+margin: 16px 0;
+}
+
+.rodape__logo img {
+  max-width: 300px;
+  }
+
+.rodape__navegacao > li {
+font-size: 14px;
+margin: 8px;
+}
+
+.rodape__navegacao a {
+transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+color: #838ec0;
+}
+
+.rodape__logo {
+max-width: 200px;
+align-items: center;
+justify-content: center;
+}
+
+.rodape__redes-sociais img {
+  max-width: 32px;
+  margin-right: 8px;
+}
+
+.rodape__cc {
+width: 100%;
+background-color: #292a2a;
+font-size: 12px;
+opacity: 0.5;
+text-align: center;
+padding: 10px;
+}
+
+/* --- DESKTOP--- --- DESKTOP--- --- DESKTOP--- --- DESKTOP---   */
+
+@media (min-width: 1330px) {
+
+/* NAV  --- NAV  --- NAV */
+
+.navegacao {
+  background-color: #457982;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+}
+
+.navegacao__logo {
+  max-width: 200px;
+}
+
+.navegacao__box {
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacao__itens li {
+  font-size: 15px;
+  margin: 0 16px;
+}
+
+.navegacao__menu-hamburguer img {
+  border-radius: 2px;
+}
+
+/* define o tamanho da caixa */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* HEADER  --- HEADER  --- HEADER */
+
+.header {
+  min-height: 90vh;
+  height: 360px;
+  background-image:
+  url(../susane-silva/img/susane-silva.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content:center;
+  color: #fff;
+}
+
+.principal {
+  margin-bottom: 250px;
+}
+
+.principal__titulo {
+  font-size: 50px;
+  padding: 40px 200px 0px px;
+}
+
+/* --- CONTEÚDO PRINCIPAL --- CONTEÚDO PRINCIPAL --- CONTEÚDO PRINCIPAL */
+
+.conteudo-principal{
+  background-color: white;
+  margin: 0 auto;
+  width: 700px;
+  padding-bottom: 40px;
+}
+
+.título__conteudo{
+  font-size: 27px;
+  color: #45888a;
+  text-align: center; 
+  padding: 30px;
+  padding-bottom: 20px;
+  padding-right: 70px;
+  font-family: 'Roboto Slab';
+}
+
+.artigo__sobreAutora{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: left;
+}
+
+.foto__dePerfil{
+  max-height: 180px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.conteudo__sobreAutora{
+  color: #45718a;
+  padding-right: 150px;
+  font-size: 17px;
+  padding-top: 18px;
+}
+
+/* --- M DE MARAVILHOSA --- M DE MARAVILHOSA --- M DE MARAVILHOSA */
+
+.conteudo-Mdemaravilhosa{
+margin: 0 auto;
+width: 760px;
+}
+
+.titulo__Mdemaravilhosa{
+  font-size: 35px;
+  color: #456b8a;
+  text-align: center; 
+  font-family: 'Roboto Slab';
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+
+.historia__Mdemaravilhosa{
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 50px 30px 50px;;
+  text-align: left;
+  color: #45638a;
+}
+
+.foto__Alunasreprograma{
+  width: 100%;
+  padding: 15px 50px 15px 50px;
+}
+
+.titulo__alunas{
+  text-align: center;
+  font-size: 15px;
+  color: #456b8a;
+}
+
+/* --- OUTRAS MARAVILHOSAS --- OUTRAS MARAVILHOSAS --- OUTRAS MARAVILHOSAS */
+
+.outras-maravilhosas{
+background-color: #fff;
+width: 100%;
+height: 350px;
+}
+
+.foto-Maravilhosas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fotos__maravilhosas{
+max-height: 200px;
+}
+
+.nome__outrasMaravilhosas{
+color: #45698a;
+font-size: 16px;
+padding-left: 20px;
+}
+
+/* --- BTN --- BTN --- BTN*/
+
+.btn__home{
+color: white;
+background-color: #3a8f9e;
+max-width: 200px;
+display: flex;
+text-align: center;
+justify-content: center;
+margin: 0 auto;
+margin-bottom: 30px;
+margin-top: 35px;
+text-transform: uppercase;
+font-weight: bold;
+padding: 15px;
+border-radius: 5px;
+font-size: 15px;
+transition: all 0.5s;
+}
+
+/* --- FOOTER --- */
+
+.rodape {
+background-color: #457982;
+color: white;
+}
+
+.rodape__principal {
+align-items: center;
+text-align: center;
+}
+
+.rodape__principal > * {
+margin: 16px 0;
+}
+
+.rodape__navegacao > li {
+font-size: 14px;
+margin: 8px;
+}
+
+.rodape__navegacao a {
+transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+color: #9b59f1;
+}
+
+.rodape__logo {
+max-width: 200px;
+align-items: center;
+justify-content: center;
+}
+
+.rodape__cc {
+width: 100%;
+background-color: #292A2A;
+font-size: 14px;
+opacity: 0.5;
+text-align: center;
+padding: 10px;
+}
+}
+}
